@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zonaprop</title>
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="icomoon/style.css">
+</head>
+<body>
+	<!--Cabecera-->
+	<header id="header">
+		
+		<div id="superior">
+			
+			<a href=""><img src="img/logo.webp"></a>
+
+			<div id="login">
+				<a href="#">Publicar una propiedad</a>
+
+				<a href="#">Ingresar</a>
+				<span class="icon-user-solid-circle"></span>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+
+		<div id="inferior">
+
+			<nav id="nav">
+				<ul id="menu">
+					<li>
+						<a href="#">
+						Comprar
+						<span class="icon-cheveron-down"></span>
+					</a>
+					<div id="sub-comprar">
+						<article class="sub-parrafo">
+							<p>Ubicacion</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">Capital Federal</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">GBA Norte</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Santa Fe</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">GBA Sur</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">GBA Oeste</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Buenos Aires Costa Atlántica</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Córdoba</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Buenos Aires (fuera de GBA)</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Mendoza</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Neuquen</a>
+								</li>
+
+							</ul>
+						</article>
+
+						<article class="sub-parrafo">
+							<p>Tipo de propiedad</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">Departamento</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Casa</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Terrenos</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">PH</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Local Comercial</a>
+								</li>
+
+							</ul>
+						</article>
+
+						<article class="sub-parrafo">
+							<p>Ambientes</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">3 ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">2 ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">4 ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">5 o más ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">1 ambiente</a>
+								</li>
+
+							</ul>
+						</article>
+
+						<article class="sub-parrafo">
+							<p>Características</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">1 o más baños</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">2 o más baños</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Sin cocheras</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">1 o más cocheras</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">A estrenar</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">En construccion</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Cocina</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Luz</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Parrilla</a>
+								</li>
+
+							</ul>
+						</article>
+
+
+					</div>
+						
+					</li>
+
+					<li>
+						<a href="#">
+							Alquilar
+							<span class="icon-cheveron-down"></span>
+						</a>
+						<div id="sub-alquilar">
+							
+						<article class="sub-parrafo">
+							<p>Ubicacion</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">Capital Federal</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">GBA Norte</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">GBA Sur</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">GBA Oeste</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Córdoba</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Santa Fe</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Buenos Aires Costa Atlántica</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Mendoza </a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Neuquen </a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Buenos Aires (fuera de GBA)</a>
+								</li>
+
+							</ul>
+						</article>
+
+						<article class="sub-parrafo">
+							<p>Tipo de propiedad</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">Departamento</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Local Comercial</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Oficina comercial</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Casa</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Bodega-Galpón</a>
+								</li>
+
+							</ul>
+						</article>
+
+						<article class="sub-parrafo">
+							<p>Ambientes</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">2 ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">1 ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">3 ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">5 o más ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">4 ambientes</a>
+								</li>
+
+							</ul>
+						</article>
+
+						<article class="sub-parrafo">
+							<p>Características</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">1 o más baños</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">2 o más baños</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Sin cocheras</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">1 o más cocheras</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">A estrenar</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Entre 10 y 20 años</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Cocina</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Agua corriente</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Pileta</a>
+								</li>
+
+							</ul>
+						</article>
+
+						</div>
+						
+					</li>
+
+					<li>
+						<a href="#">
+						Temporal
+							<span class="icon-cheveron-down"></span>
+						</a>
+
+						<div id="sub-temporal">
+
+						<article class="sub-parrafo">
+							<p>Ubicacion</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">Capital Federal</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Buenos Aires Costa Atlántica</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Córdoba</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">GBA Norte</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Rio Negro</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Mendoza </a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Neuquen </a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">GBA Sur</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Entre Ríos</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Entre Ríos</a>
+								</li>
+
+							</ul>
+						</article>
+
+						<article class="sub-parrafo">
+							<p>Tipo de propiedad</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">Departamento</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Casa</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">PH</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Quinta Vacaciones</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Local Comercial</a>
+								</li>
+
+							</ul>
+						</article>
+
+						<article class="sub-parrafo">
+							<p>Ambientes</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">3 ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">4 ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">2 ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">5 o más ambientes</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">1 ambientes</a>
+								</li>
+
+							</ul>
+						</article>
+
+						<article class="sub-parrafo">
+							<p>Caracteristicas</p>
+							<ul class="sub-lista">
+
+								<li class="sub-items">
+									<a href="#">1 o más baños</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">2 o más baños</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Sin cocheras</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">1 o más cocheras</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Hasta 5 años</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">A estrenar</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Cocina</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Luz</a>
+								</li>
+
+								<li class="sub-items">
+									<a href="#">Pileta</a>
+								</li>
+
+							</ul>
+						</article>
+							
+						</div>
+
+			
+					</li>
+
+					<li>
+						<a href="#">
+							Emprendimientos
+							<span class="icon-cheveron-down"></span>
+						</a>
+						<div id="sub-emprendimiento">
+							<p>Etapa</p>
+							<ul id="sub-menu-emprendimiento">
+								<li id="sub-items-emprendimiento">
+									<a href="#">En pozo</a>
+								</li>
+
+								<li id="sub-items-emprendimiento">
+									<a href="#">En construccion</a>
+								</li>
+
+								<li id="sub-items-emprendimiento">
+									<a href="#">Terminados</a>
+								</li>
+
+								<li id="sub-items-emprendimiento">
+									<a href="#">En cualquier etapa</a>
+								</li>
+							</ul>
+						</div>
+					
+					</li>
+				</ul>
+			</nav>
+
+				<a href="#" id="help">Ayuda</a>			
+		</div>
+
+	</header>
+
+	<!--fin del header-->
+
+	<div id="medio">
+		<span class="icon-home3"></span>
+		<a href="#">¡Nuevo!</a>
+		<a href="#">Garantía Zonaprop</a>
+	</div>
+
+	<!-- inicio del section-->
+
+	<section>
+		
+		<header id="fondo">
+			
+			<div id="transparente">
+				
+				<h1>
+					Encontrá <strong>tu hogar</strong>
+				</h1>
+
+				<nav id="lista-central">
+					<ul id="menu-central">
+						<li id="fijo">
+							<a href="#">
+								Comprar
+							</a>
+						</li>
+
+						<li class="cambia">
+							<a href="#">
+								Alquilar
+							</a>
+						</li>
+
+						<li class="cambia">
+							<a href="#">
+								Emprendimientos
+							</a>
+						</li>
+
+						<li class="cambia">
+							<a href="#">
+								Comercial
+							</a>
+						</li>
+
+						<li class="cambia">
+							<a href="#">
+								Temporal
+							</a>
+						</li>
+
+						<li class="cambia">
+							<a href="#">
+								Valuador
+							</a>
+						</li>
+					</ul>					
+				</nav>
+
+				<div id="wrap">
+					<article id="desplegable">
+						<a href="#">Departamento</a>
+						<span class="icon-cheveron-down"></span>
+					</article>
+
+					<input type="text" name="buscar" placeholder="Buscá por ubicacion o palabra clave">
+
+					<article id="boton">
+						<span class="icon-search"></span>
+						<a href="#">Buscar</a>
+					</article>
+
+				</div>
+
+				<div id="oculto">
+					
+					<article id="ambientes">
+						<p>Ambientes</p>
+						<button value="1" class="btn-ambientes">1+</button>
+						<button value="2" class="btn-ambientes">2+</button>
+						<button value="3" class="btn-ambientes">3+</button>
+						<button value="4" class="btn-ambientes">4+</button>
+						<button value="5" class="btn-ambientes">5+</button>
+					</article>
+
+					<article id="precios">
+						<p>Precio</p>
+						<div id="wrap-precio">
+							<input type="text" id="desde" name="desde" placeholder="USD desde">
+							<input type="text" id="hasta" name="hasta" placeholder="USD hasta">
+								
+						</div>
+					</article>
+
+					<article id="resultado-busqueda">
+						<p>Ver resultado en</p>
+						<div id="wrap-resultado">
+							<button id="listado" name="listado">Listado</button>
+							<button id="mapa" name="mapa">Mapa</button>							
+						</div>
+					</article>
+
+					<article id="boton-buscar">
+						<button>
+							<span class="icon-search"></span>
+							Buscar
+						</button>
+					</article>
+
+				</div>
+
+				<p id="avanzada">
+					Ver búsqueda avanzada 
+					<span class="icon-cheveron-down"></span>
+				</p>
+
+				<p id="ocultar">
+					Ocultar búsqueda avanzada 
+					<span class="icon-cheveron-up"></span>
+				</p>
+
+			</div>
+		</header>
+
+		<section id="articulo-central">
+			<div id="wrap-articulos">
+
+				<article id="articulos">
+					<span class="icon-office"></span>
+					<h2>Cantidad y varidad</h2>
+					<p>Tenemos más de 500 mil propiedades</p>
+				</article>
+
+				<article id="articulos">
+					<span class="icon-binoculars"></span>
+					<h2>Búsqueda exacta</h2>
+					<p>Filtrá por la ubicación, el precio y las características</p>
+				</article>
+
+				<article id="articulos">
+					<span class="icon-mobile"></span>
+					<h2>Múltiples dispositivos</h2>
+					<p>Busca desde la web o el celular</p>
+				</article>
+			</div>
+		</section>
+
+		<footer id="inmuebles">
+			
+			<h1>
+				Más buscados
+			</h1>
+			<div id="wrap-inmuebles">
+
+				<article class="tipo-inmueble">
+					<h3>
+						Tipos de inmuebles populares
+					</h3>
+					<p><a href="#">Departamentos en Venta</a></p>
+					<p><a href="#">Casas en Venta</a></p>
+					<p><a href="#">Terrenos en Venta</a></p>
+					<p><a href="#">Departamentos en Alquiler</a></p>
+					<p><a href="#">Casas en Alquiler</a></p>
+					<a href="#" id="mas">ver más</a>
+				</article>
+
+				<article class="tipo-inmueble">
+					<h3>
+						Propiedades en venta
+					</h3>
+					<p><a href="#">Departamentos en venta: Rosario</a></p>
+					<p><a href="#">Departamentos en venta: Tigre</a></p>
+					<p><a href="#">Departamentos en Venta</a></p>
+					<p><a href="#">Departamentos en venta: Cordoba</a></p>
+					<p><a href="#">Departamentos en venta: Caballito</a></p>
+					<a href="#" id="mas">ver más</a>
+				</article>
+
+				<article class="tipo-inmueble">
+					<h3>
+						Propiedades en alquiler
+					</h3>
+					<p><a href="#">Departamentos en Alquiler: Palermo</a></p>
+					<p><a href="#">Departamentos en Alquiler: Belgrano</a></p>
+					<p><a href="#">Departamentos en Alquiler: Puerto Madero</a></p>
+					<p><a href="#">Departamentos en Alquiler: Recoleta</a></p>
+					<p><a href="#">Departamentos en Alquiler: Barrio Norte</a></p>
+					<a href="#" id="mas">ver más</a>
+				</article>
+
+				<article class="tipo-inmueble">
+					<h3>
+						Zonas más populares
+					</h3>
+					<p><a href="#">Tigre</a></p>
+					<p><a href="#">Pilar</a></p>
+					<p><a href="#">Palermo</a></p>
+					<p><a href="#">Escobar</a></p>
+					<p><a href="#">Vicente Lopez</a></p>
+					<a href="#" id="mas">ver más</a>
+				</article>
+			</div>
+		</footer>
+	</section>
+
+	<!--fin del section-->
+
+
+	<!-- inicio del footer -->
+	<footer id="footer">
+		
+		<div id="pie-superior">
+
+			<article class="pie-wrap">
+				<h3>Más Zonaprop</h3>
+
+					<ul>
+						<li>
+							<a href="#">Descargá la app Android</a>
+						</li>
+
+						<li>
+							<a href="#">Descargá la app iPhone</a>
+						</li>
+
+						<li>
+							<a href="#">Inmuebles en Argentina</a>
+						</li>
+
+						<li>
+							<a href="#">Publicar tu Inmueble</a>
+						</li>
+
+						<li>
+							<a href="#">Ayuda</a>
+						</li>
+
+						<li>
+							<a href="#">Mapa del sitio</a>
+						</li>
+
+						<li>
+							<a href="#">Publicidad</a>
+						</li>
+
+						<li>
+							<a href="#">Noticias</a>
+						</li>
+
+						<li>
+							<a href="#">Valuador</a>
+						</li>
+
+						<li>
+							<a href="#">Garantía Zonaprop</a>
+						</li>
+					</ul>
+			</article>
+
+			<article class="pie-wrap">
+				<h3>Anunciantes</h3>
+
+				<ul>
+					<li>
+						<a href="#">Inmobiliarias</a>
+					</li>
+
+					<li>
+						<a href="#">Corredores</a>
+					</li>
+
+					<li>
+						<a href="#">Constructoras</a>
+					</li>
+				</ul>
+			</article>
+
+			<article class="pie-wrap">
+				<h3>Más Zonaprop</h3>
+
+					<ul>
+						<li>
+							<a href="#">Países</a>
+						</li>
+
+						<li>
+							<a href="#">Brasil</a>
+						</li>
+
+						<li>
+							<a href="#">México</a>
+						</li>
+
+						<li>
+							<a href="#">Perú</a>
+						</li>
+
+						<li>
+							<a href="#">Ecuador</a>
+						</li>
+
+						<li>
+							<a href="#">Venezuela</a>
+						</li>
+
+						<li>
+							<a href="#">Panamá</a>
+						</li>
+					</ul>
+
+			</article>
+
+			<article class="pie-wrap">
+				<h3>Seguinos</h3>
+				
+					<ul>
+						<li>
+							<span class="icon-twitter"></span>
+							<a href="#">Twitter</a>
+						</li>
+
+						<li>
+							<span class="icon-instagram"></span>
+							<a href="#">Instagram</a>
+						</li>
+
+						<li>
+							<span class="icon-facebook2"></span>
+							<a href="#">Facebook</a>
+						</li>
+
+						<li>
+							<span class="icon-pinterest"></span>
+							<a href="#">Pinterest</a>
+						</li>
+
+						<li>
+							<span class="icon-youtube"></span>
+							<a href="#">Youtube</a>
+						</li>
+
+					</ul>
+
+			</article>
+			
+		</div>
+
+		<div id="pie-inferior">
+			
+			<article id="politicas">
+				<a href="#">Términos y Condiciones de Uso -</a>
+				<a href="#">Términos y Condiciones de Uso -</a>
+				<a href="#">Términos y Condiciones de Uso -</a>
+				<a href="#">Términos y Condiciones de Uso -</a>
+			</article>
+
+			<p>&copy;Copyright 2020 zonaprop.com </p>
+
+
+		</div>
+
+
+	</footer>
+
+
+
+
+</body>
+</html>

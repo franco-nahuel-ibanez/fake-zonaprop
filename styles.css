@@ -1,0 +1,608 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+#header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 1px 5px 0px #ccccccd6;
+}
+#header #superior {
+  width: 85%;
+  height: 45px;
+  margin: 0px auto;
+  background: white;
+  line-height: 40px;
+}
+#header #superior img {
+  height: 27px;
+  margin-top: 5px;
+}
+#header #superior #login {
+  float: right;
+}
+#header #superior #login a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+#header #superior #login a:nth-child(2) {
+  text-decoration: none;
+  color: #fc7b27;
+}
+#header #superior #login span {
+  position: relative;
+  top: 3px;
+  color: #fc7b27;
+  cursor: pointer;
+}
+#header #superior .clear {
+  float: none;
+  clear: both;
+}
+#header #inferior {
+  width: 85%;
+  height: 34px;
+  margin: 0px auto;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header #inferior #nav {
+  width: 37%;
+}
+#header #inferior #nav #menu {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#header #inferior #nav #menu li {
+  display: block;
+}
+#header #inferior #nav #menu li a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+#header #inferior #nav #menu li a span {
+  position: relative;
+  top: 2px;
+}
+#header #inferior #nav #menu li #sub-comprar {
+  position: absolute;
+  z-index: 2;
+  background: white;
+  margin-top: 10px;
+  width: 1000px;
+  height: 375px;
+  border-radius: 5px;
+  display: none;
+  justify-content: space-between;
+}
+#header #inferior #nav #menu li #sub-comprar .sub-parrafo {
+  width: 25%;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+#header #inferior #nav #menu li #sub-comprar .sub-parrafo p {
+  font-size: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+#header #inferior #nav #menu li #sub-comprar .sub-parrafo .sub-items {
+  padding-bottom: 10px;
+}
+#header #inferior #nav #menu li #sub-comprar .sub-parrafo .sub-items a {
+  color: #3aa7e4;
+  border-bottom: none;
+}
+#header #inferior #nav #menu li #sub-alquilar {
+  position: absolute;
+  z-index: 2;
+  background: white;
+  margin-top: 10px;
+  width: 1000px;
+  height: 375px;
+  border-radius: 5px;
+  display: none;
+  justify-content: space-between;
+}
+#header #inferior #nav #menu li #sub-alquilar .sub-parrafo {
+  width: 25%;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+#header #inferior #nav #menu li #sub-alquilar .sub-parrafo p {
+  font-size: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+#header #inferior #nav #menu li #sub-alquilar .sub-parrafo .sub-items {
+  padding-bottom: 10px;
+}
+#header #inferior #nav #menu li #sub-alquilar .sub-parrafo .sub-items a {
+  color: #3aa7e4;
+  border-bottom: none;
+}
+#header #inferior #nav #menu li #sub-temporal {
+  position: absolute;
+  z-index: 2;
+  background: white;
+  margin-top: 10px;
+  width: 1000px;
+  height: 375px;
+  border-radius: 5px;
+  display: none;
+  justify-content: space-between;
+}
+#header #inferior #nav #menu li #sub-temporal .sub-parrafo {
+  width: 25%;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+#header #inferior #nav #menu li #sub-temporal .sub-parrafo p {
+  font-size: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+#header #inferior #nav #menu li #sub-temporal .sub-parrafo .sub-items {
+  padding-bottom: 10px;
+}
+#header #inferior #nav #menu li #sub-temporal .sub-parrafo .sub-items a {
+  color: #3aa7e4;
+  border-bottom: none;
+}
+#header #inferior #nav #menu li #sub-emprendimiento {
+  background: white;
+  position: absolute;
+  z-index: 2;
+  margin-top: 10px;
+  width: 250px;
+  height: 210px;
+  border-radius: 5px;
+  display: none;
+}
+#header #inferior #nav #menu li #sub-emprendimiento p {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+#header #inferior #nav #menu li #sub-emprendimiento #sub-items-emprendimiento {
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+#header #inferior #nav #menu li #sub-emprendimiento #sub-items-emprendimiento a {
+  color: #3aa7e4;
+  border-bottom: none;
+}
+#header #inferior #nav #menu li:hover > a {
+  color: #fc7b27;
+  border-bottom: 2px solid #fc7b27;
+}
+#header #inferior #nav #menu li:hover #sub-comprar {
+  display: flex;
+}
+#header #inferior #nav #menu li:hover #sub-alquilar {
+  display: flex;
+}
+#header #inferior #nav #menu li:hover #sub-temporal {
+  display: flex;
+}
+#header #inferior #nav #menu li:hover #sub-emprendimiento {
+  display: block;
+}
+#header #inferior #help {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+#header #inferior #help:hover {
+  color: #fc7b27;
+}
+
+#medio {
+  height: 35px;
+  background: #fef1e9;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+}
+#medio span {
+  color: #fc7b27;
+}
+#medio a {
+  text-decoration: none;
+  font-size: 13.2px;
+  font-weight: bolder;
+  color: black;
+}
+#medio a:nth-child(2) {
+  color: #fc7b27;
+}
+
+section #fondo {
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  background: url("img/dfp-venta.jpg");
+}
+section #fondo #transparente {
+  width: 78%;
+  min-height: 280px;
+  position: absolute;
+  top: 60px;
+  left: 160px;
+  border-radius: 6px;
+  background-color: rgba(66, 60, 60, 0.55);
+  /*div oculto*/
+}
+section #fondo #transparente h1 {
+  text-align: center;
+  font-size: 33px;
+  font-weight: normal;
+  color: white;
+  padding: 29px;
+}
+section #fondo #transparente #menu-central {
+  width: 95%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px auto;
+  height: 46px;
+  background-color: #484542a8;
+  border-radius: 20px;
+}
+section #fondo #transparente #menu-central li {
+  flex: 1;
+  margin: 2px;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-radius: 20px;
+}
+section #fondo #transparente #menu-central li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+}
+section #fondo #transparente #menu-central li:nth-child(1) {
+  background: #fc7b27;
+}
+section #fondo #transparente #wrap {
+  background: white;
+  width: 95%;
+  height: 46px;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+}
+section #fondo #transparente #wrap #desplegable {
+  width: 18%;
+  height: 100%;
+  line-height: 45px;
+  display: block;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+section #fondo #transparente #wrap #desplegable a {
+  text-decoration: none;
+  color: black;
+  padding-left: 15px;
+}
+section #fondo #transparente #wrap #desplegable span {
+  position: relative;
+  left: 35px;
+}
+section #fondo #transparente #wrap input[type=text] {
+  height: 90%;
+  width: 66%;
+  padding-left: 15px;
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  color: black;
+}
+section #fondo #transparente #wrap #boton {
+  width: 18%;
+  height: 100%;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fc7b27;
+  border-radius: 0px 5px 5px 0px;
+  transition: 300ms;
+}
+section #fondo #transparente #wrap #boton a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+section #fondo #transparente #wrap #boton span {
+  color: white;
+  font-size: 13px;
+  padding: 3px;
+}
+section #fondo #transparente #wrap #boton:hover {
+  background-color: #fc7b27bd;
+}
+section #fondo #transparente #oculto {
+  display: flex;
+  width: 95%;
+  height: 75px;
+  margin: 0px auto;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+section #fondo #transparente #oculto #ambientes {
+  width: 25%;
+}
+section #fondo #transparente #oculto #ambientes p {
+  font-size: 12px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+section #fondo #transparente #oculto #ambientes button {
+  color: #fc7b27;
+  height: 31px;
+  width: 42px;
+  margin: 2px;
+  border-radius: 20px;
+  background: white;
+  border: 1px solid #fc7b27;
+  cursor: pointer;
+}
+section #fondo #transparente #oculto #precios p {
+  font-size: 12px;
+  padding-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+section #fondo #transparente #oculto #precios #wrap-precio {
+  width: 290px;
+  height: 47px;
+  padding-top: 4px;
+  text-align: center;
+  background: white;
+  border-radius: 5px;
+}
+section #fondo #transparente #oculto #precios #wrap-precio input {
+  width: 140px;
+  height: 90%;
+  background: transparent;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #877f77;
+}
+section #fondo #transparente #oculto #precios #wrap-precio #hasta {
+  border-left: 1px solid #ccc;
+}
+section #fondo #transparente #oculto #resultado-busqueda p {
+  font-size: 12px;
+  padding-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+section #fondo #transparente #oculto #resultado-busqueda #wrap-resultado {
+  background: white;
+  width: 179px;
+  height: 47px;
+  text-align: center;
+  border-radius: 5px;
+}
+section #fondo #transparente #oculto #resultado-busqueda #wrap-resultado #listado {
+  width: 48%;
+  height: 81%;
+  margin-top: 4px;
+  font-size: 17px;
+  background: #3aa7e4;
+  color: white;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  cursor: pointer;
+}
+section #fondo #transparente #oculto #resultado-busqueda #wrap-resultado #mapa {
+  margin-left: -8px;
+  width: 48%;
+  height: 81%;
+  font-size: 17px;
+  background: transparent;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  cursor: pointer;
+}
+section #fondo #transparente #oculto #boton-buscar button {
+  width: 181px;
+  height: 47px;
+  border-radius: 5px;
+  border: none;
+  background: #fc7b27;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+section #fondo #transparente #oculto #boton-buscar button span {
+  font-size: 13px;
+}
+section #fondo #transparente #oculto #boton-buscar:hover button {
+  background-color: #ec955b;
+}
+section #fondo #transparente #avanzada {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+section #fondo #transparente #ocultar {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+section #articulo-central {
+  width: 100%;
+  height: 265px;
+  background-color: #f0f0f0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section #articulo-central #wrap-articulos {
+  width: 85%;
+  height: 145px;
+  background: white;
+  position: absolute;
+  top: 20px;
+  box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.17), -1px -1px 10px -1px rgba(0, 0, 0, 0.17);
+  display: flex;
+  justify-content: space-around;
+}
+section #articulo-central #wrap-articulos #articulos {
+  padding-top: 25px;
+  width: 23%;
+}
+section #articulo-central #wrap-articulos #articulos span {
+  float: left;
+  font-size: 50px;
+  padding-right: 25px;
+  color: #fc7b27;
+}
+section #articulo-central #wrap-articulos #articulos h2 {
+  font-size: 18px;
+}
+section #articulo-central #wrap-articulos #articulos p {
+  font-size: 14px;
+}
+section #inmuebles {
+  width: 100%;
+  height: 250px;
+  background: white;
+}
+section #inmuebles h1 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  left: 100px;
+}
+section #inmuebles #wrap-inmuebles {
+  width: 85%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+section #inmuebles #wrap-inmuebles .tipo-inmueble {
+  width: 25%;
+}
+section #inmuebles #wrap-inmuebles .tipo-inmueble h3 {
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #4c3333;
+}
+section #inmuebles #wrap-inmuebles .tipo-inmueble p {
+  padding-bottom: 3px;
+}
+section #inmuebles #wrap-inmuebles .tipo-inmueble p a {
+  font-size: 14px;
+  text-decoration: none;
+  padding-bottom: 7px;
+  color: #3aa7e4;
+}
+section #inmuebles #wrap-inmuebles .tipo-inmueble #mas {
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #3aa7e4;
+}
+
+#footer {
+  background: #eaeaea;
+}
+#footer #pie-superior {
+  width: 85%;
+  margin: 0px auto;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer #pie-superior h3 {
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#footer #pie-superior li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+#footer #pie-superior li a {
+  text-decoration: none;
+  color: #8d849d;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 300ms;
+}
+#footer #pie-superior li:hover a {
+  color: #3aa7e4;
+}
+#footer #pie-inferior {
+  width: 85%;
+  margin: 0px auto;
+  padding-top: 35px;
+}
+#footer #pie-inferior #politicas {
+  font-size: 14px;
+}
+#footer #pie-inferior #politicas a {
+  color: #3aa7e4;
+  text-decoration: none;
+}
+#footer #pie-inferior #politicas a:hover {
+  text-decoration: underline;
+}
+#footer #pie-inferior p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
+  color: #8d849d;
+}
+
+/*# sourceMappingURL=styles.css.map */
